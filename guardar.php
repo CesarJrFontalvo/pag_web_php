@@ -12,14 +12,14 @@
 if($nombre == false){
 
     echo "<script> alert('Debes ingresar tu nombre y edad');
-    location.href = 'parte1.php';
+    location.href = 'index.php';
     </script>";
 
 }else{
     $insertar = "INSERT INTO t_personas VALUES ('$nombre','$edad') ";
     $query = mysqli_query($conectar, $insertar);
     echo "<script> 
-    location.href = 'parte1.php';
+    location.href = 'index.php';
    </script>";
 }
 
